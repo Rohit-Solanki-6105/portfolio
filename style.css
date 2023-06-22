@@ -173,6 +173,9 @@ section{
     padding: 10px;
     font-size: large;
 }
+#projects{
+    min-height: 100vh;
+}
 #projects h1{
     text-align: center;
     border-bottom: 1px solid var(--border-white);
