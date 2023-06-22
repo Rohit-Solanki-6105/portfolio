@@ -1,0 +1,32 @@
+function theme(){
+    let theme_button = document.getElementById("theme_button");
+    if(theme_button.innerHTML === "Blue Mode"){
+        theme_button.innerHTML = "Light Mode";
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+    }
+    else if(theme_button.innerHTML === "Light Mode"){
+        theme_button.innerHTML = "Dark Mode";
+        document.body.classList.remove("light");
+        document.body.classList.add("dark");
+    }
+    else{
+        theme_button.innerHTML = "Blue Mode";
+        document.body.classList.remove("dark");
+        document.body.classList.remove("light");
+    }
+}
+
+function search(){
+    let input_text = document.getElementById("searchbar").value.toLowerCase();
+    let project_arr = document.querySelectorAll(".pro");
+
+    for(let i = 0; i < project_arr.length; i++){
+        if(!project_arr[i].innerHTML.toLowerCase().includes(input_text)){
+            project_arr[i].parentElement.style.display = "none";
+        }
+        else{
+            project_arr[i].parentElement.style.display = "block";
+        }
+    }
+}

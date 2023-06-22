@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit H Solanki</title>
+    <link rel="shortcut icon" href="r_logo_git.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <nav>
+        <span>R</span>
+        <span onclick="theme()" id="theme_button">Blue Mode</span>
+        <span><a href="#home">Home</a></span>
+        <span><a href="#projects">Projects</a></span>
+        <span><a href="#contacts">Contacts</a></span>
+    </nav>
+    <section id="home">
+        <main>
+            <article class="me">
+                <div>
+                <h1>Rohit H Solanki</h1>
+                <p>
+                    I'm a <br>
+                    Ethical Hacker<br>
+                    Digital Forensic Proffesional<br>
+                    Full stack Developer <br>
+                    Software Engineer <br>
+                    Painter
+                </p>
+                </div>
+            </article>
+            <article class="myimg">
+                <!-- <img src="r_logo_git.png" alt="myphoto"> -->
+                <span>R</span>
+            </article>
+        </main>
+    </section>
+    <hr>
+    <section id="projects">
+        <h1>Projects</h1>
+        <input type="text" id="searchbar" placeholder="Search project" style="margin-left: 30px;" oninput="search()">
+        <main>
+            <div>
+                <a class="pro" href="https://github.com/Rohit-Solanki-6105/Python-chess" target="_blank">
+                    <p>Python Chess</p>
+                </a>
+            </div>
+            <div>
+                <a class="pro" href="https://github.com/Rohit-Solanki-6105/projects-web/tree/main/TODO%20app" target="_blank">
+                    <p>Todo App</p>
+                </a>
+            </div>
+            <div>
+                <a class="pro" href="https://github.com/Rohit-Solanki-6105/projects-web/tree/main/painting%20sell%20with%20koi%20fish" target="_blank">
+                    <p>Painting selling with
+                    <br>swimming fishes</p>
+                </a>
+            </div>
+            <div>
+                <a class="pro" href="https://github.com/Rohit-Solanki-6105/projects-web/tree/main/3d%20transform" target="_blank">
+                    <p>3d trans</p>
+                </a>
+            </div>
+            <div>
+                <a class="pro" href="https://github.com/Rohit-Solanki-6105/projects-web/tree/main/my%20paintings" target="_blank">
+                    <p>Paintings page</p>
+                </a>
+            </div>
+            <div>
+                <a class="pro" href="https://github.com/Rohit-Solanki-6105/particle-effects" target="_blank">
+                    <p>Particle Effects</p>
+                </a>
+            </div>
+        </main>
+    </section>
+    <hr>
+    <section id="contacts">
+        <main>
+            <form action="mailto:solanki.rohit6105@gmail.com" method="post" enctype="text/plain">
+                <h1>Contact me</h1>
+                <label>Name: </label><input type="text" name="name" id="name"><br>
+                <textarea name="feedback" id="feedback" placeholder="write to me..." required></textarea><br>
+                <button type="submit">Send to me</button>
+            </form>
+        </main>
+        <footer>
+            <span><span>&#x2709;</span>: solanki.rohit6105@gmail.com</span>
+            <span><i class='fa fa-github'></i>:<a href="https://github.com/Rohit-Solanki-6105/" target="_blank">Rohit-Solanki-6105</a></span>
+        </footer>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
