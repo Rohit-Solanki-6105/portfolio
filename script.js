@@ -1,3 +1,4 @@
+//for themes
 function theme(){
     let theme_button = document.getElementById("theme_button");
     if(theme_button.innerHTML === "Blue Mode"){
@@ -17,6 +18,7 @@ function theme(){
     }
 }
 
+// to search my projects
 function search(){
     let input_text = document.getElementById("searchbar").value.toLowerCase();
     let project_arr = document.querySelectorAll(".pro");
@@ -28,5 +30,19 @@ function search(){
         else{
             project_arr[i].parentElement.style.display = "block";
         }
+    }
+}
+
+//for menubar/navbar, making responsive
+let menu_icon = document.getElementById("menu_icon");
+let navlist = document.getElementById("navlist"); 
+menu_icon.onclick = () => {
+    navlist.classList.toggle("linkclose");
+    navlist.classList.toggle("linkopen");
+    if(navlist.className == "linkopen"){
+        menu_icon.innerHTML = "\u00d7";
+    }
+    else{
+        menu_icon.innerHTML = "☰";
     }
 }
