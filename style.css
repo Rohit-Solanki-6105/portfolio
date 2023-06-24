@@ -64,10 +64,10 @@ nav{
     /* position: absolute; */
     /* left: 2%; */
 /* } */
-nav span:nth-child(1), nav span:nth-child(2){
+nav div:nth-child(1), nav div:nth-child(2){
     position: absolute;
 }
-nav span:nth-child(1){
+nav div:nth-child(1){
     margin: 10px;
     /* border-radius: 50%; */
     color: var(--gray);
@@ -75,24 +75,25 @@ nav span:nth-child(1){
     font-size: xx-large;
     left: 2%;
 }
-nav span:nth-child(2){
+nav div:nth-child(2){
     left: 5%;
 }
-nav span{
+nav span,nav div{
     margin: 10px 40px 10px 40px;
     display: inline;
 }
-nav span,nav span a{
+nav span,nav span a, nav div{
+    display: block;
     color: var(--gray);
     font-size: x-large;
     text-decoration: none;
     z-index: 600;
 }
-nav ul li a:hover, nav span:hover, nav ul li:hover{
+nav #navlist span a:hover, nav div:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-nav span{
+nav span,.navlink{
     float: left;
 }
 section{
@@ -229,10 +230,16 @@ footer *{
     padding: 5px;
 }
 
-@media screen and (max-width: 500px){
-    .me::after{
-        display: none;
-    }
+#menu_icon{
+    display: none;
+    height: 30px;
+    width: 30px;
+    color: var(--gray);
+    margin: 10px;
+    font-size: larger;
+}
+
+@media screen and (max-width: 700px){
     section{
         transform: scale(0.95);
         display: flex;
@@ -262,5 +269,44 @@ footer *{
     }
     #contacts textarea{
         width: 50vh;
+    }
+    #menu_icon{
+        display: block;
+    }
+    #navlist{
+        position: absolute;
+        /* right: -100%; */
+        top: 100%;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 5px;
+        margin: 5px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        border-radius: 30px;
+        /* box-shadow: 0 0 100px black; */
+    }
+    #navlist span a{
+        font-size: medium;
+        color: var(--black);
+    }
+    nav *:hover{
+        text-decoration: none;
+    }
+    .linkclose{
+        right: -100%;
+    }
+    .linkopen{
+        right: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .me,.myimg{
+        width: 100%;
+    }
+    .me::after{
+        display: none;
     }
 }
