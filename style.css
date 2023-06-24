@@ -82,7 +82,7 @@ nav span,nav div{
     margin: 10px 40px 10px 40px;
     display: inline;
 }
-nav span,nav span a, nav div{
+nav #navlist span, nav #navlist span a, nav div{
     display: block;
     color: var(--gray);
     font-size: x-large;
