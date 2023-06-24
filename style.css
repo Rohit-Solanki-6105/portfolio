@@ -252,6 +252,9 @@ footer *{
         top: 0;
         background-color: transparent;
     }
+    .myimg{
+        display: none;
+    }
     .me{
         transform: translateX(0%);
     }
