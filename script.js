@@ -1,7 +1,7 @@
 //for themes
 function theme(){
     let theme_button = document.getElementById("theme_button");
-    if(theme_button.innerHTML === "Blue Mode"){
+    if(theme_button.innerHTML === "Cerulean Mode"){
         theme_button.innerHTML = "Light Mode";
         document.body.classList.add("light");
         document.body.classList.remove("dark");
@@ -12,7 +12,7 @@ function theme(){
         document.body.classList.add("dark");
     }
     else{
-        theme_button.innerHTML = "Blue Mode";
+        theme_button.innerHTML = "Cerulean Mode";
         document.body.classList.remove("dark");
         document.body.classList.remove("light");
     }
