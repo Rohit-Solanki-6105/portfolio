@@ -248,7 +248,7 @@ footer *{
     margin: 5px;
     columns: 4;
 }
-#acheivements div{
+#acheivements div, .acheivement{
     width: 20vw;
     height: fit-content;
     display: inline-block;
@@ -262,7 +262,7 @@ footer *{
     box-shadow: 0 0 10px var(--gray);
     border: 0;
 }
-#acheivements div p{
+#acheivements div p,.acheivement *, .acheivement{
     color: var(--gray);
 }
 #acheivements div img{
