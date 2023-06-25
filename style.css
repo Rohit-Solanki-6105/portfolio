@@ -82,7 +82,7 @@ nav span,nav div{
     margin: 10px 40px 10px 40px;
     display: inline;
 }
-nav #navlist span, nav #navlist span a, nav div{
+nav span,nav span a, nav div{
     display: block;
     color: var(--gray);
     font-size: x-large;
@@ -139,6 +139,10 @@ section{
 }
 .me div p{
     font-size: large;
+}
+.me div button{
+    padding: 10px;
+    cursor: pointer;
 }
 .myimg{
     /* clip-path: polygon(12.5% 0%, 100% 0%, 100% 100%, 40% 100%); */
@@ -239,6 +243,34 @@ footer *{
     font-size: larger;
 }
 
+#acheivements{
+    padding: 10px;
+    margin: 5px;
+    columns: 4;
+}
+#acheivements div{
+    width: 20vw;
+    height: fit-content;
+    display: inline-block;
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+#acheivements div:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 10px var(--gray);
+    border: 0;
+}
+#acheivements div p{
+    color: var(--gray);
+}
+#acheivements div img{
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 700px){
     section{
         transform: scale(0.95);
@@ -311,5 +343,19 @@ footer *{
     }
     .me::after{
         display: none;
+    }
+    #acheivements{
+        columns: 2;
+    }
+    #acheivements div{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 300px) {
+    #acheivements{
+        columns: 1;
+    }
+    #acheivements div{
+        width: 80vw;
     }
 }
