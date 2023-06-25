@@ -250,7 +250,7 @@ footer *{
 }
 #acheivements div, .acheivement{
     width: 20vw;
-    height: fit-content;
+    height: auto;
     display: inline-block;
     border: 1px solid aliceblue;
     border-radius: 20px;
