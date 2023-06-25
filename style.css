@@ -251,6 +251,7 @@ footer *{
 #acheivements div, .acheivement{
     width: 20vw;
     height: auto;
+    min-height: min-content;
     display: inline-block;
     border: 1px solid aliceblue;
     border-radius: 20px;
