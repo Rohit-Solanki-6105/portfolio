@@ -97,7 +97,8 @@ nav span,.navlink{
     float: left;
 }
 section{
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
 }
 .me{
