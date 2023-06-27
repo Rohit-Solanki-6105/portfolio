@@ -310,6 +310,7 @@ footer *{
     #menu_icon{
         display: block;
     }
+    #menu_icon:hover{text-decoration: none;}
     #navlist{
         position: absolute;
         /* right: -100%; */
