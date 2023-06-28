@@ -180,6 +180,7 @@ section{
 }
 #projects{
     min-height: 100vh;
+    height: auto;
 }
 #projects h1{
     text-align: center;
