@@ -1,23 +1,3 @@
-//for themes
-function theme(){
-    let theme_button = document.getElementById("theme_button");
-    if(theme_button.innerHTML === "Cerulean Mode"){
-        theme_button.innerHTML = "Light Mode";
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-    }
-    else if(theme_button.innerHTML === "Light Mode"){
-        theme_button.innerHTML = "Dark Mode";
-        document.body.classList.remove("light");
-        document.body.classList.add("dark");
-    }
-    else{
-        theme_button.innerHTML = "Cerulean Mode";
-        document.body.classList.remove("dark");
-        document.body.classList.remove("light");
-    }
-}
-
 // to search my projects
 function search(){
     let input_text = document.getElementById("searchbar").value.toLowerCase();
