@@ -15,19 +15,6 @@ html{
     --border-white: rgb(205, 215, 224);
 }
 
-.light{
-    --white: rgb(255, 255, 255);
-    --black: black;
-    --gray: rgb(45, 45, 45);
-    --border-white: rgb(16, 16, 16);
-}
-
-.dark{
-    --white: rgb(10, 10, 10);
-    --black: aliceblue;
-    --gray: rgb(215, 215, 215);
-}
-
 ::-webkit-scrollbar{
     width: 0.7rem;
     background-color: transparent;
