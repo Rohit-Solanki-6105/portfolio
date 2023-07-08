@@ -9,7 +9,7 @@ html{
 }
 
 :root{
-    --white: rgb(8, 22, 34);
+    --blue: rgb(13, 35, 53);
     --black: black;
     --gray: rgb(205, 215, 224);
     --border-white: rgb(205, 215, 224);
@@ -17,11 +17,11 @@ html{
 
 ::-webkit-scrollbar{
     width: 0.7rem;
-    background-color: transparent;
+    background-color: var(--blue);
 }
 ::-webkit-scrollbar-track{
     width: 0.7rem;
-    background-color: transparent;
+    background-color: var(--blue);
 }
 ::-webkit-scrollbar-thumb{
     width: 0.7rem;
@@ -31,8 +31,9 @@ html{
 
 
 body{
-    background-color: var(--white);
+    /* background-color: var(--blue); */
     font-family: Comic Sans MS;
+    background: linear-gradient(45deg, var(--black), var(--blue));
 }
 nav{
     background-color: transparent;
@@ -86,6 +87,7 @@ nav span,.navlink{
 section{
     height: 100vh;
     width: 100%;
+    background: linear-gradient(45deg, rgb(7, 12, 16), var(--blue));
 }
 .me{
     float: left;
@@ -94,7 +96,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--white);
+    /* background-color: var(--blue); */
     overflow: hidden;
     /* clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%); */
     z-index: 50;
@@ -138,7 +140,7 @@ section{
     right: 0;
     /* width: 67.7%; */
     width: 50%;
-    background-color: transparent;
+    /* background: transparent; */
     float: right;
     z-index: 39;
 }
@@ -156,24 +158,24 @@ section{
 #contacts footer{
     height: 10%;
     width: 100%;
-    background-color: rgb(45, 45, 45);
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    color: var(--white);
+    color: var(--blue);
     padding: 10px;
     font-size: large;
 }
 #projects{
-    min-height: 100vh;
     height: auto;
+    min-height: 100vh;
 }
 #projects h1{
     text-align: center;
     border-bottom: 1px solid var(--border-white);
     padding: 20px;
-    margin: 10px;
+    /* margin: 10px; */
     font-size: 50px;
 }
 h1{
@@ -236,7 +238,7 @@ footer *{
     margin: 5px;
     columns: 4;
 }
-#acheivements div, .acheivement{
+#acheivements div{
     width: 20vw;
     height: auto;
     min-height: min-content;
@@ -251,7 +253,7 @@ footer *{
     box-shadow: 0 0 10px var(--gray);
     border: 0;
 }
-#acheivements div p,.acheivement *, .acheivement{
+#acheivements div p{
     color: var(--gray);
 }
 #acheivements div img{
@@ -259,12 +261,17 @@ footer *{
     margin-bottom: 10px;
     border-radius: 15px;
 }
-
 @media screen and (max-width: 700px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
     section{
         transform: scale(0.95);
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
     .myimg,.me{
         left: 0;
@@ -278,6 +285,7 @@ footer *{
     }
     .me{
         transform: translateX(0%);
+        padding-left: 20px;
     }
     .me div{
         transform: translateX(0%);
@@ -297,7 +305,6 @@ footer *{
     #menu_icon{
         display: block;
     }
-    #menu_icon:hover{text-decoration: none;}
     #navlist{
         position: absolute;
         /* right: -100%; */
@@ -313,6 +320,7 @@ footer *{
         border-radius: 30px;
         /* box-shadow: 0 0 100px black; */
     }
+    #menu_icon:hover{text-decoration: none;}
     #navlist span a{
         font-size: medium;
         color: var(--black);
