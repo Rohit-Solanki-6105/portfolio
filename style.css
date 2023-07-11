@@ -83,6 +83,8 @@ nav #navlist span a:hover, nav div:hover{
 }
 nav span,.navlink{
     float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
 }
 section{
     height: 100vh;
