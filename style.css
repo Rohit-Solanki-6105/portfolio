@@ -341,7 +341,7 @@ footer *{
     .me,.myimg{
         width: 100%;
     }
-    .me::after{
+    .me::after,.myimg{
         display: none;
     }
     #acheivements{
