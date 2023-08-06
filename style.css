@@ -29,7 +29,6 @@ html{
     border-radius: 20px;
 }
 
-
 body{
     /* background-color: var(--blue); */
     font-family: Comic Sans MS;
@@ -125,8 +124,11 @@ section{
 .me div h1{
     font-size: 60px;
     font-weight: lighter;
+    /* color: transparent; */
+    /* -webkit-text-stroke: 0.2px aliceblue; */
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: plutur; */
 }
 .me div p{
     font-size: large;
@@ -148,8 +150,10 @@ section{
 }
 .myimg span{
     color: var(--gray);
-    font-size: 200px;
+    /* color: transparent; */
+    font-size: 400px;
     font-family: vivaldi;
+    /* -webkit-text-stroke: 1px aliceblue; */
 }
 #contacts main{
     display: flex;
@@ -269,7 +273,6 @@ footer *{
         padding: 0;
     }
     section{
-        transform: scale(0.95);
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -294,9 +297,6 @@ footer *{
     }
     #projects main{
         grid-template-columns: repeat(3,1fr);
-    }
-    #contacts{
-        transform: scale(0.97);
     }
     #contacts footer{
         font-size: x-small;
@@ -337,11 +337,15 @@ footer *{
         right: 0;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
     .me,.myimg{
         width: 100%;
     }
-    .me::after,.myimg{
+    .me::after, .myimg{
         display: none;
     }
     #acheivements{
@@ -349,6 +353,9 @@ footer *{
     }
     #acheivements div{
         width: 40vw;
+    }
+    nav span,.navlink{
+        font-family: sans-serif;
     }
 }
 @media screen and (max-width: 300px) {
