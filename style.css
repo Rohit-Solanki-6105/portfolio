@@ -267,6 +267,43 @@ footer *{
     margin-bottom: 10px;
     border-radius: 15px;
 }
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+#skills main{
+    width: 90%;
+    min-height: 90%;
+    background-color: rgb(21, 36, 50);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px;
+}
+#skills main div{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(rgb(191, 225, 255) var(--i), transparent 0%);
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#skills main div .inner{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: rgb(21, 36, 50);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
 @media screen and (max-width: 700px){
     body{
         margin: 0;
@@ -336,6 +373,15 @@ footer *{
     .linkopen{
         right: 0;
     }
+
+    #skills main div{
+        height: 100px;
+        width: 100px;
+    }
+    #skills main div .inner{
+        height: 90px;
+        width: 90px;
+    }
 }
 @media screen and (max-width: 1000px){
     body{
@@ -356,6 +402,18 @@ footer *{
     }
     nav span,.navlink{
         font-family: sans-serif;
+    }
+    
+    #skills{
+        height: max-content;
+    }
+    #skills main div{
+        height: 150px;
+        width: 150px;
+    }
+    #skills main div .inner{
+        height: 135px;
+        width: 135px;
     }
 }
 @media screen and (max-width: 300px) {
