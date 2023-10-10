@@ -26,17 +26,3 @@ menu_icon.onclick = () => {
         menu_icon.innerHTML = "☰";
     }
 }
-
-function search_achievements(){
-    let input_achievement = document.getElementById("searchbar_acheivements").value.toLowerCase();
-    let acheivement_arr = document.querySelectorAll(".acheivement");
-
-    for(let i = 0; i < acheivement_arr.length; i++){
-        if(!acheivement_arr[i].innerHTML.toLowerCase().includes(input_achievement)){
-            acheivement_arr[i].style.display = "none";
-        }
-        else{
-            acheivement_arr[i].style.display = "inline-block";
-        }
-    }
-}
