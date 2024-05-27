@@ -11,7 +11,7 @@ const Footer = () => {
           Stay Engaged with My Creative Adventures - <span className="text-sky-200">Connect, Collaborate, and Inspire!</span>
         </h1>
         <h3 className="p-1 text-center">
-          Whether you're looking to start a new project, need some advice, or just want to chat, I'm here. Connect with me on social media or send an email. Let's create something amazing together!
+          Whether you&apos;re looking to start a new project, need some advice, or just want to chat, I&apos;m here. Connect with me on social media or send an email. Let&apos;s create something amazing together!
         </h3>
         <a href="mailto:solanki.rohit6105@gmail.com" className='my-4'>
           <MagicButton title={"Get in Touch"} icon={<IoMail />} position={"left"} />
