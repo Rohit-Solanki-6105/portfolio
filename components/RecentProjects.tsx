@@ -42,7 +42,7 @@ const RecentProjects = () => {
                   {project.des}
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
-                  <Image
+                  <img
                     src={project.img}
                     height="1000"
                     width="1000"
