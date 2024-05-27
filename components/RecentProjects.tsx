@@ -6,6 +6,7 @@ import MagicButton from './ui/MagicButton'
 import { IoLogoGithub } from 'react-icons/io5'
 import { projects } from '@/data'
 import { string } from 'three/examples/jsm/nodes/Nodes.js'
+import Image from 'next/image'
 
 const RecentProjects = () => {
   return (
@@ -41,7 +42,7 @@ const RecentProjects = () => {
                   {project.des}
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
-                  <img
+                  <Image
                     src={project.img}
                     height="1000"
                     width="1000"
