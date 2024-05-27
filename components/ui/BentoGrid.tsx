@@ -84,6 +84,35 @@ export const BentoGridItem = ({
         background: 'transparent'
       }}
     >
+      
+      {id==1 && (
+        <div className="flex flex-col gap-1 lg:gap-5 w-full absolute overflow-hidden">
+          
+      <div className="flex flex-row gap-3 lg:gap-8 w-full overflow-hidden">
+        
+        {["React JS", "Next JS", "Flutter", "MERN"].map((value) => (
+          <span key={value} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-black-200 hover:scale-110 w-1/4">
+            {value}
+          </span>
+        ))}
+      </div>
+      <div className="flex flex-row gap-3 lg:gap-8">
+        {["Design", "C/C++", "Python", "MongoDB", "MySQL"].map((value) => (
+          <span key={value} className=" py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-black-200 hover:scale-110 w-1/4">
+            {value}
+          </span>
+        ))}
+      </div>
+      <div className="flex flex-row gap-3 lg:gap-8">
+        {["Beck-end", "Front-end", "Cyber Security", "Cloud Computing"].map((value) => (
+          <span key={value} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-black-200 hover:scale-110 w-1/4 mb-8">
+            {value}
+          </span>
+        ))}
+      </div>
+      {/* <div className="h-[50px]"></div> */}
+    </div>
+      )}
       {id==3 && (
       // <div>
 
@@ -110,34 +139,9 @@ export const BentoGridItem = ({
     )}
       {header}
       
-      {id==1 && (
-        <div className="flex flex-col gap-1 lg:gap-5 w-full absolute overflow-hidden">
-      <div className="flex flex-row gap-3 lg:gap-8 w-full overflow-hidden">
-        {["React JS", "Next JS", "Flutter", "MERN"].map((value) => (
-          <span key={value} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-black-200 group-hover:scale-150 w-1/4">
-            {value}
-          </span>
-        ))}
-      </div>
-      <div className="flex flex-row gap-3 lg:gap-8">
-        {["Design", "C/C++", "Python", "MongoDB", "MySQL"].map((value) => (
-          <span key={value} className=" py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-black-200 group-hover:scale-150 w-1/4">
-            {value}
-          </span>
-        ))}
-      </div>
-      <div className="flex flex-row gap-3 lg:gap-8">
-        {["Beck-end", "Front-end", "Cyber Security", "Cloud Computing"].map((value) => (
-          <span key={value} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-black-200 group-hover:scale-150 w-1/4 mb-8">
-            {value}
-          </span>
-        ))}
-      </div>
-      <div className="h-[50px]"></div>
-    </div>
-      )}
       
-      <div className={`${id === 6 && 'flex justify-center h-full'}`}>
+      
+      <div className='flex justify-center h-full'>
         <div className="w-full h-full absolute">
           {img && (
             <img 
