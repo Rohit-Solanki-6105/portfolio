@@ -5,7 +5,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
 import RecentProjects from "@/components/RecentProjects";
-import { IoHome, IoPerson, IoPowerOutline } from "react-icons/io5";
+import { IoHome, IoPerson, IoPaperPlaneOutline } from "react-icons/io5";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import ParallaxComponent from "@/components/ui/ParallaxComponent";
 import Footer from "@/components/Footer";
@@ -21,7 +21,7 @@ export default function Home() {
         <FloatingNav navItems={[
           { name: "Home", link: "/" , icon: <IoHome />},
           { name: "About", link: "#about" , icon: <IoPerson />},
-          { name: "Projects", link: "#projects" , icon: <IoHome />},
+          { name: "Projects", link: "#projects" , icon: <IoPaperPlaneOutline />},
           { name: "Contacts", link: "#contacts" , icon: <IoMdContacts />},
         ]}/>
         <Hero />
