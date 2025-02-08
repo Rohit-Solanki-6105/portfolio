@@ -130,7 +130,7 @@ export const gridItems = [{
       id: 1,
       title: "LPMS",
       des: "An open source python application to print the files in dot matric printer with banner(banner, user, date)",
-      img: "https://repository-images.githubusercontent.com/695523802/cf949ae4-0cbb-4dad-8744-a02542e05125",
+      img: "https://repository-images.githubusercontent.com/821764805/54a64ef2-892e-48b6-ade7-c19c34c8a99f",
       // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/Rohit-Solanki-6105/Line-Printer-Management-System",
       icon: <img src="https://raw.githubusercontent.com/Rohit-Solanki-6105/Line-Printer-Management-System/main/logo.ico" className="w-10 h-10"/>
