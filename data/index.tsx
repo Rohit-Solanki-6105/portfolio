@@ -104,7 +104,7 @@ export const gridItems = [{
     // title: "The Art of Design",
     // description: "Discover the beauty of thoughtful and functional design.",
     header: "",
-    className: "md:col-span-1",
+    className: "md:col-span-3",
     // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     icon: <BackgroundBeams />,
   },
@@ -120,7 +120,7 @@ export const gridItems = [{
       <img src="3.png" alt="" className="h-full rounded-md  translate-y-3"/>
       <img src="4.png" alt="" className="h-full rounded-md  -translate-y-4"/>
     </div>,
-    className: "md:col-span-2",
+    className: "md:col-span-2 hidden",
     // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     icon: <BackgroundBeams />,
   }];
