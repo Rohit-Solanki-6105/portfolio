@@ -135,14 +135,14 @@ export const gridItems = [{
       link: "https://github.com/Rohit-Solanki-6105/Line-Printer-Management-System",
       icon: <img src="https://raw.githubusercontent.com/Rohit-Solanki-6105/Line-Printer-Management-System/main/logo.ico" className="w-10 h-10"/>
     },
-    // {
-    //   id: 2,
-    //   title: "Yoom - Video Conferencing App",
-    //   des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    //   img: "/p2.svg",
-    //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    //   link: "https://github.com/adrianhajdin/zoom-clone",
-    // },
+    {
+      id: 2,
+      title: "Journey Mate",
+      des: "A modern web-based travel management system built for planning, booking, and managing tours with ease",
+      img: "https://raw.githubusercontent.com/Rohit-Solanki-6105/journeymate/refs/heads/main/jm.png",
+      link: "https://journey-mate-1.onrender.com",
+      icon: <img src="https://raw.githubusercontent.com/Rohit-Solanki-6105/journeymate/refs/heads/main/logo.png" className="w-10 h-10"/>
+    },
     // {
     //   id: 3,
     //   title: "AI Image SaaS - Canva Application",

@@ -5,7 +5,6 @@ import { CardBody, CardContainer, CardItem } from './ui/3dCard'
 import MagicButton from './ui/MagicButton'
 import { IoLogoGithub } from 'react-icons/io5'
 import { projects } from '@/data'
-import { string } from 'three/examples/jsm/nodes/Nodes.js'
 import Image from 'next/image'
 
 const RecentProjects = () => {
