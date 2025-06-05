@@ -108,22 +108,7 @@ export const gridItems = [{
     // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     icon: <BackgroundBeams />,
   },
-  {
-    id:4,
-    title: "Current Project",
-    description:
-      "Currently Building a Online + Offline Music Player that allows user to download, share and manage the music in Flutter",
-
-    header: <div className="right-0 absolute flex flex-row gap-3 h-full skew-x-[10deg] skew-y-[10deg]  opacity-50">
-      <img src="1.png" alt="" className="h-full rounded-md translate-y-8"/>
-      <img src="2.png" alt="" className="h-full rounded-md"/>
-      <img src="3.png" alt="" className="h-full rounded-md  translate-y-3"/>
-      <img src="4.png" alt="" className="h-full rounded-md  -translate-y-4"/>
-    </div>,
-    className: "md:col-span-2 hidden",
-    // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-    icon: <BackgroundBeams />,
-  }];
+  ];
   
   export const projects = [
     {
