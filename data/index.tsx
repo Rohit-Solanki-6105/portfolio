@@ -139,8 +139,9 @@ export const gridItems = [{
       id: 2,
       title: "Journey Mate",
       des: "A modern web-based travel management system built for planning, booking, and managing tours with ease",
-      img: "https://raw.githubusercontent.com/Rohit-Solanki-6105/journeymate/refs/heads/main/jm.png",
-      link: "https://journey-mate-1.onrender.com",
+      img: "https://repository-images.githubusercontent.com/996874519/79bdad85-093b-4c14-bec8-07f04a067b31",
+      link: "https://github.com/Rohit-Solanki-6105/journeymate",
+      demoLink: "https://journey-mate-1.onrender.com",
       icon: <img src="https://raw.githubusercontent.com/Rohit-Solanki-6105/journeymate/refs/heads/main/logo.png" className="w-10 h-10"/>
     },
     // {

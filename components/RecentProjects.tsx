@@ -3,7 +3,7 @@ import { SparklesCore } from './ui/Sparkles'
 import { AuroraBackground } from './ui/AuroraBackground'
 import { CardBody, CardContainer, CardItem } from './ui/3dCard'
 import MagicButton from './ui/MagicButton'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoEarthOutline } from 'react-icons/io5'
 import { projects } from '@/data'
 import Image from 'next/image'
 
@@ -69,11 +69,17 @@ const RecentProjects = () => {
                     // href="https://github.com/Rohit-Solanki-6105/Line-Printer-Management-System"
                     target="_blank"
                     // as="button"
-                    className="px-4 py-4 rounded-xl text-xs font-bold"
+                    className="px-4 py-4 rounded-xl text-xs font-bold flex flex-col gap-3"
                   >
                     <a href={project.link} target='_blank'>
                       <MagicButton title={'Github Code'} icon={<IoLogoGithub/>} position={'left'} />
                     </a>
+                    {
+                      project.demoLink &&
+                      <a href={project.demoLink} target='_blank' title="Demo">
+                        <MagicButton title={'Demo'} icon={<IoEarthOutline/>} position={'left'} />
+                      </a>
+                    }
                   </CardItem>
                 </div>
               </CardBody>
