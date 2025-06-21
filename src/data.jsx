@@ -102,6 +102,14 @@ const projects = [
     img: "https://repository-images.githubusercontent.com/996874519/79bdad85-093b-4c14-bec8-07f04a067b31",
     technologies: ["Next.js", "Tailwind CSS", "MongoDB", "App Write"]
   },
+  {
+    title: "Retro Rumble",
+    description: "Step back in time and rediscover the golden age of gaming with our site, your ultimate destination for retro games. Explore a vast library of titles, and with our ROM upload support.",
+    githubLink: "https://github.com/Rohit-Solanki-6105/retro-rumble",
+    liveLink: "https://retro-rumble.vercel.app",
+    img: "https://repository-images.githubusercontent.com/1006016737/87093d8d-f71d-4d2c-b271-c1f032f2ce49",
+    technologies: ["React", "Tailwind CSS", "Emulator JS"]
+  },
 ];
 
 const emails = [
